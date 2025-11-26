@@ -29,13 +29,13 @@ resource "aws_default_security_group" "default" {
   }
 }
 ## Cria subnet privada na us-east-1a
-resource "aws_subnet" "private_subnet_1A" {
+resource "aws_subnet" "private_subnet_1a" {
   vpc_id            = aws_vpc.minha_vpc.id
   cidr_block        = "10.0.1.0/24"
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "priv-subnet-1a"
+    Name = "priv-subnet-1A"
   }
 }
 
